@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script lang="javascript">
+        function clicked() {
+            console.log("The button was clicked!");
+        }
+    </script>
 </head>
 <body>
     <h2 style="color: rgba(30, 6, 247, 0.918);">
     Marcus Crabtree
     </h2>
-   
+<p>
+    <button onclick="clicked();">Click me!</button>
+</p>
+<p>
+    <a href="YesOrNo.html">Go to YesOrNo.html</a>
+</p>
+<p>
+    <a href="index.html">Go to Index.html</a>
+</p>
+    <div hidden>
+        <span>This is line 1</span>
+        <span>This is line 2</span>
+        <span>This is line 3</span>
+    </div>
     <p>
         I joined because I wanted to have a career in programming.
     </p>
@@ -38,9 +56,9 @@
                  This is an 'option' tag.
             </span>
             <select>
-                <option>Yes</option>
-                <option>No</option>
-                <option>Maybe?</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+                <option value="?">Maybe?</option>
             </select>
     </p>
     
