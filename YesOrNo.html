@@ -14,8 +14,15 @@
             console.log("The 'No!' button was clicked!");
         }
     </script>
+    <script lang="javascript">
+        function loaded() {
+        document.getElementById("inp").value="ABC";
+        }
+    </script>
 </head>
-<body>
+<body onload="loaded()">
+    <input id="inp" type="text">
+    
     <h1>Yes or No Buttons</h1>
     <p> 
         <button onclick="yes();">Yes!</button>
