@@ -18,6 +18,11 @@ const display = (jsonresp) => {
     $("#eid").text(user.id);
     $("#eusername").text(user.userName);
     $("#efullname").text(user.firstName + " " + user.lastName);
+    $("#epassword").text(user.password);
+    $("#ephone").text(user.phoneNumber);
+    $("#eemail").text(user.email);
+    $("#eisreviewer").text(user.reviewer ? "Yes" : "No");
+    $("#eisadmin").text(user.admin ? "Yes" : "No");
 }
 
 

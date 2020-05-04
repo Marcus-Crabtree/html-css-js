@@ -13,8 +13,8 @@ $().ready( ()=> {
         newUser.lastName = $("#elastname").val();
         newUser.phoneNumber = $("#ephone").val();
         newUser.email = $("#eemail").val();
-        newUser.isAdmin = $("#eisadmin").prop("checked");
-        newUser.isReviewer = $("#eisreviewer").prop("checked");
+        newUser.admin = $("#eisadmin").prop("checked");
+        newUser.reviewer = $("#eisreviewer").prop("checked");
         console.log("User:", newUser);
         $.ajax({
             method: "POST", 
