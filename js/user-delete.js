@@ -54,6 +54,6 @@ const display = (user) => {
     $("#epassword").val(user.password);
     $("#ephone").val(user.phoneNumber);
     $("#eemail").val(user.email);
-    $("#eisreviewer").val(user.reviewer ? "Yes" : "No");
-    $("#eisadmin").val(user.admin ? "Yes" : "No");
+    $("#eisreviewer").prop("checked",user.reviewer);
+    $("#eisadmin").prop("checked",user.admin);
 }
