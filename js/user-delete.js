@@ -48,12 +48,12 @@ const userGetByPK = (id) => {
 }
 
 const display = (user) => {
-    $("#eid").text(user.id);
-    $("#eusername").text(user.userName);
-    $("#efullname").text(user.firstName + " " + user.lastName);
-    $("#epassword").text(user.password);
-    $("#ephone").text(user.phoneNumber);
-    $("#eemail").text(user.email);
-    $("#eisreviewer").text(user.reviewer ? "Yes" : "No");
-    $("#eisadmin").text(user.admin ? "Yes" : "No");
+    $("#eid").val(user.id);
+    $("#eusername").val(user.userName);
+    $("#efullname").val(user.firstName + " " + user.lastName);
+    $("#epassword").val(user.password);
+    $("#ephone").val(user.phoneNumber);
+    $("#eemail").val(user.email);
+    $("#eisreviewer").val(user.reviewer ? "Yes" : "No");
+    $("#eisadmin").val(user.admin ? "Yes" : "No");
 }
