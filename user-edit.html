@@ -3,13 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit user</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/user-edit.css">
     <script src="js/user-edit.js"></script>
 </head>
 <body>
+   
+    <div>
+        <table class="table table-striped table-dark">
+            <tr>
+                <th>Id:</th>
+                <td>
+                    <input id="eid" type="number" value="1">
+                    <Buttton id="get" class=" btn btn-secondary btn-sm">Get user</Buttton>
+                </td>
+            </tr>
+            <tr>
+                <th>Username:</th>
+                <td>
+                    <input id="eusername" type="text" size="25">
+                </td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td>
+                    <input id="epassword" type="password" size="25">
+                </td>
+            </tr>
+            <tr>
+                <th>First Name:</th>
+                <td>
+                    <input id="efirstname" type="text" size="25">
+                </td>
+            </tr>
+            <tr>
+                <th>Last Name:</th>
+                <td>
+                    <input id="elastname" type="text" size="25">
+                </td>
+            </tr>
+            <tr>
+                <th>Phone number:</th>
+                <td>
+                    <input id="ephone" type="text" size="15">
+                </td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td>
+                    <input id="eemail" type="text" size="35">
+                </td>
+            </tr>
+            <tr>
+                <th>Is Reviewer:</th>
+                <td>
+                    <input id="eisreviewer" type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <th>Is Admin:</th>
+                <td>
+                    <input id="eisadmin" type="checkbox">
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+    <button id="save"  class="btn btn-outline-dark">Update User info</button>
     
 </body>
 </html>
